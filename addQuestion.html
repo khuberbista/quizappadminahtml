@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <title>Create Quiz</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1>Add Quiz Questions</h1>
+
+        <label for="quesions">
+        Questions : <textarea class="form-control" name="question" id="questions" cols="30" rows="5"></textarea>
+    </label>
+        <br>
+        <label for="option1">
+        Option 1: <input class="form-control" type="text" name="option1" id="option1">
+    </label>
+        <select class="form-control" name="option1Correct" id="option1Correct">
+        <option value="true">Correct</option>
+        <option value="false">Incorrect</option>
+    </select>
+        <br>
+        <label for="option1">
+        Option 2: <input class="form-control" type="text" name="option1" id="option2">
+    </label>
+        <select class="form-control" name="option2Correct" id="option2Correct">
+        <option value="true">Correct</option>
+        <option value="false">Incorrect</option>
+    </select>
+        <br><br>
+    <label>Marks: <input type="text" name="marks" id="marks"> </label> <br><br>
+        <button class="btn btn-primary" onClick="questionData('add')">Add Another Question..</button>
+        <button class="btn btn-primary" onClick="questionData('save')">Save</button>
+
+    </div>
+    <script src="addQuestion.js">
+
+    </script>
+</body>
+
+</html>
